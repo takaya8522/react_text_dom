@@ -1,0 +1,49 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+.App h2 {
+  text-align: center;
+}
+.App-select {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  font-size: 1.05em;
+}
+.App-start,
+.App-end {
+  height: 50vh;
+  overflow-y: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.App-start {
+  background: #cffafe;
+}
+
+.App-end {
+  background: #fef9c3;
+}
+
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+@media (min-width: 600px) {
+  .App {
+    display: flex;
+  }
+
+  .App-start,
+  .App-end {
+    flex: 0 0 50%;
+    min-height: 100vh;
+  }
+}

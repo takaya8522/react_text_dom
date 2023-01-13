@@ -1,0 +1,19 @@
+.App-start .container .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.App-start .container .modal__content {
+  background-color: #fff;
+  padding: 20px 50px;
+}
